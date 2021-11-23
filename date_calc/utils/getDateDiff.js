@@ -1,14 +1,14 @@
-// import { DateTime } from '../libs/luxon.js';
+import { DateTime } from '../libs/luxon.js';
 
-// export default (dateFrom, dateTo) => {
-//     if (dateFrom < dateTo) {
-//         [dateFrom, dateTo] = [dateTo, dateFrom];
-//     }
+export default (dateFrom, dateTo) => {
+    if (dateFrom < dateTo) {
+        [dateFrom, dateTo] = [dateTo, dateFrom];
+    }
 
-//     const dateFromObj = DateTime.fromISO(dateFrom);
-//     const dateObj = DateTime.fromIso(dateTo);
+    const dateFromObj = DateTime.fromISO(dateFrom);
+    const dateToObj = DateTime.fromISO(dateTo);
 
-//     const diff = dateFromObj.diff(dateToObj, ['years', 'months', 'days']).toObject();
+    const diff = dateFromObj.diff(dateToObj, ['years', 'months', 'days']).toObject();
 
-//     return diff;
-// }
+    return diff;
+}
