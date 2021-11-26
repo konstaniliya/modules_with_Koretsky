@@ -1,10 +1,13 @@
 import "../utils/visibility.js";
 import { printErrorTimer,printTimer } from '../utils/print.js';
+import "../libs/howler.js"
+
+
 const form = document.getElementById("timer");
 
 form.onsubmit = (event) => {
     event.preventDefault();
-
+    document.getElementById("startBtn").disabled = true;
     const formData = new FormData(form);
 
     let hours = formData.get("hours");
@@ -15,9 +18,8 @@ form.onsubmit = (event) => {
     return
     }   
     let timer = setInterval(()=>{
-        console.log(minutes);
         seconds--;
-        if(seconds==0 & minutes!=0) {
+        if(seconds==-1 & minutes!=0) {
             minutes--;
             seconds = 59;
         }
@@ -26,12 +28,18 @@ form.onsubmit = (event) => {
             seconds = 59;
             minutes = 59;
         }
-
+        document.getElementById("stopBtn").onclick = ()=>{
+            clearInterval(timer);
+        document.getElementById("startBtn").disabled = false;
+        }
         
         printTimer({hours,minutes,seconds});
 
     },1000);
-    document.getElementById("stopBtn").onclick = ()=>{
-        clearInterval(timer);
-    }
+
+    var sound = new Howl({
+        src: ['/pages/sound.mp3']
+      });
+      
+      sound.play();
 }
