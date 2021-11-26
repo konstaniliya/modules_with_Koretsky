@@ -38,7 +38,7 @@ form.onsubmit = (event) => {
     },1000);
 
     var sound = new Howl({
-        src: ['/pages/sound.mp3']
+        src: ['/sounds/sound.mp3']
       });
       
       sound.play();
