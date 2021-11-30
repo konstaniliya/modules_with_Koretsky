@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  font-family: Lato, serif;
+}
+
+.selectBtn {
+  background-color: #fc5f79;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 32px;
+}
+
+.selectBtn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.selectorBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.isSelected {
+  background-color: forestgreen;
+}
+
+#dateCalcBlock {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainBlocks {
+  display: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 560px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#stopBtn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.controlBtn {
+  width: 140px;
+  background-color: #fc5f79;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.inputArea {
+  width: 90px;
+  border: 1px solid #fc5f79;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 25px;
+  outline: none;
+}
+
+.inputAreaDate {
+  width: 190px;
+  border: 1px solid #fc5f79;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 21px;
+  outline: none;
+}
+
+
+/*# sourceMappingURL=/main.fb6bbcaf.css.map */
