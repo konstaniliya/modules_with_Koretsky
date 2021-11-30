@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор дат</title>
+    <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="selectorBlock">
+        <button class="selectBtn" id="dateCalcBtn">Калькулятор дат</button>
+        <button class="selectBtn" id="timerBtn">Таймер</button>
+    </div>
+    <div id="dateCalcBlock" class="mainBlocks">
+        <h2>Калькулятор дат</h2>
+        <form id="calcDate">
+            <label for="dateFrom">
+                Первая дата:
+                <input type="date" name="dateFrom" id="dateFrom" class="inputAreaDate">
+            </label>
+            <label for="dateTo">
+                Вторая дата:
+                <input type="date" name="dateTo" id="dateTo" class="inputAreaDate">
+            </label>
+            <button type="submit" class="selectBtn">Расчитать промежуток</button>
+        </form>
+        <p id="output"></p>
+    </div>
+    <div id="timerBlock" class="mainBlocks">
+        <form id="timer">
+            <div class="labels">
+                <label for="hours">
+                Часы:
+                    <input type="number" name="hours" class="inputArea">
+                </label>
+                <label for="minutes">
+                Минуты:
+                    <input type="number" name="minutes" class="inputArea">
+                </label>
+                <label for="seconds">
+                Секунды:
+                    <input type="number" name="seconds" class="inputArea">
+                </label>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="controlBtn" id="startBtn">Старт</button>
+                <button type="reset" class="controlBtn">Сброс</button>
+            </div> 
+        </form>
+        <button id="stopBtn" class="controlBtn">Стоп</button>
+
+        <div id="outputTimer">
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+*
+    margin 0
+    padding: 0
+    transition: transform .3s
+    font-family: Lato, serif
+
+$mainTheme: rgb(252, 95, 121)
+
+.selectBtn
+    background-color: $mainTheme
+    border: none
+    border-radius: 5px
+    padding: 10px
+    color: rgb(255, 255, 255)
+    font-size: 25px
+    cursor: pointer
+    margin: 32px
+    &:hover
+        transform: scale(1.02)
+.selectorBlock
+    display: flex
+    justify-content: center
+.isSelected
+    background-color: forestgreen
+#dateCalcBlock
+    align-items: center
+.mainBlocks
+    display: none
+.show
+    display: flex
+    flex-direction: column
+#timer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 560px
+    align-self: center
+#stopBtn
+    align-self: center
+.buttons
+    display: flex
+    margin-top: 25px
+    justify-content: center
+.controlBtn
+    width: 140px
+    background-color: $mainTheme
+    border: none
+    border-radius: 5px
+    padding: 10px
+    color: rgb(255, 255, 255)
+    font-size: 25px
+    cursor: pointer
+    margin: 5px
+.inputArea
+    width: 90px
+    border: 1px solid $mainTheme
+    border-radius: 5px
+    padding: 10px
+    font-size: 25px
+    outline: none
+.inputAreaDate
+    width: 190px
+    border: 1px solid $mainTheme
+    border-radius: 5px
+    padding: 10px
+    font-size: 21px
+    outline: none
